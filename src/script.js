@@ -35,8 +35,7 @@ function formattedPhone(phone) {
     }
     else if (phone.length == 11){
         if(phone.charAt(0) == 8){
-            phone[0]= '7'
-            phone = '+' + phone;
+            phone = '+7' + phone.substring(1)
         }
         else if(phone.charAt(0) == 7){
             phone = '+' + phone;
@@ -45,12 +44,8 @@ function formattedPhone(phone) {
             alert('формат функции неверный')
             return ""
         }
-        
     }
-    else if(phone.length = 12 && phone.charAt(0)== '+' && phone.charAt(1) == 7){
-        //все гаразд
-    }
-    else{
+    else if(phone.length != 12 && phone.charAt(0) != '+' && phone.charAt(1) != 7){
         alert('формат функции неверный')
         return ""
     }
