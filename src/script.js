@@ -7,12 +7,12 @@ function getRow(firstRow, secondRow) {
     first = 0
     second = 0
     for (let i = 0; i < firstRow.length; i++) {
-        if (firstRow.charAt(i) === "a" || firstRow.charAt(i) === "а"){
+        if (firstRow.charAt(i) === a){
             first++
         }
     }
     for (var i = 0; i < secondRow.length; i++) {
-        if (secondRow.charAt(i) === "a" || secondRow.charAt(i) === "а"){
+        if (secondRow.charAt(i) === a){
             second++
         }
     }
